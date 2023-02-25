@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<title></title>
+		<meta name="description" content="" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="index.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+			integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+	</head>
+	<body>
+		<section>
+			<div class="board grid-container abs">
+				<div class="light"></div>
+				<div class="dark"></div>
+				<div class="light"></div>
+				<div class="dark"></div>
+				<div class="light"></div>
+				<div class="dark"></div>
+				<div class="light"></div>
+				<div class="dark"></div>
+				<div class="dark"></div>
+				<div class="light"></div>
+				<div class="dark"></div>
+				<div class="light"></div>
+				<div class="dark"></div>
+				<div class="light"></div>
+				<div class="dark"></div>
+				<div class="light"></div>
+				<div class="light"></div>
+				<div class="dark"></div>
+				<div class="light"></div>
+				<div class="dark"></div>
+				<div class="light"></div>
+				<div class="dark"></div>
+				<div class="light"></div>
+				<div class="dark"></div>
+				<div class="dark"></div>
+				<div class="light"></div>
+				<div class="dark"></div>
+				<div class="light"></div>
+				<div class="dark"></div>
+				<div class="light"></div>
+				<div class="dark"></div>
+				<div class="light"></div>
+				<div class="light"></div>
+				<div class="dark"></div>
+				<div class="light"></div>
+				<div class="dark"></div>
+				<div class="light"></div>
+				<div class="dark"></div>
+				<div class="light"></div>
+				<div class="dark"></div>
+				<div class="dark"></div>
+				<div class="light"></div>
+				<div class="dark"></div>
+				<div class="light"></div>
+				<div class="dark"></div>
+				<div class="light"></div>
+				<div class="dark"></div>
+				<div class="light"></div>
+				<div class="light"></div>
+				<div class="dark"></div>
+				<div class="light"></div>
+				<div class="dark"></div>
+				<div class="light"></div>
+				<div class="dark"></div>
+				<div class="light"></div>
+				<div class="dark"></div>
+				<div class="dark"></div>
+				<div class="light"></div>
+				<div class="dark"></div>
+				<div class="light"></div>
+				<div class="dark"></div>
+				<div class="light"></div>
+				<div class="dark"></div>
+				<div class="light"></div>
+			</div>
+			<div class="board grid-container" id="board">
+				<div id="1" class="chess"></div>
+				<div id="2" class="chess"></div>
+				<div id="3" class="chess"></div>
+				<div id="4" class="chess"></div>
+				<div id="5" class="chess"></div>
+				<div id="6" class="chess"></div>
+				<div id="7" class="chess"></div>
+				<div id="8" class="chess"></div>
+				<div id="9" class="chess"></div>
+				<div id="10" class="chess"></div>
+				<div id="11" class="chess"></div>
+				<div id="12" class="chess"></div>
+				<div id="13" class="chess"></div>
+				<div id="14" class="chess"></div>
+				<div id="15" class="chess"></div>
+				<div id="16" class="chess"></div>
+				<div id="17" class="chess"></div>
+				<div id="18" class="chess"></div>
+				<div id="19" class="chess"></div>
+				<div id="20" class="chess"></div>
+				<div id="21" class="chess"></div>
+				<div id="22" class="chess"></div>
+				<div id="23" class="chess"></div>
+				<div id="24" class="chess"></div>
+				<div id="25" class="chess"></div>
+				<div id="26" class="chess"></div>
+				<div id="27" class="chess"></div>
+				<div id="28" class="chess"></div>
+				<div id="29" class="chess"></div>
+				<div id="30" class="chess"></div>
+				<div id="31" class="chess"></div>
+				<div id="32" class="chess"></div>
+				<div id="33" class="chess"></div>
+				<div id="34" class="chess"></div>
+				<div id="35" class="chess"></div>
+				<div id="36" class="chess"></div>
+				<div id="37" class="chess"></div>
+				<div id="38" class="chess"></div>
+				<div id="39" class="chess"></div>
+				<div id="40" class="chess"></div>
+				<div id="41" class="chess"></div>
+				<div id="42" class="chess"></div>
+				<div id="43" class="chess"></div>
+				<div id="44" class="chess"></div>
+				<div id="45" class="chess"></div>
+				<div id="46" class="chess"></div>
+				<div id="47" class="chess"></div>
+				<div id="48" class="chess"></div>
+				<button id="49" class="chess">
+					<i
+						class="fa-solid fa-chess-pawn"
+						id="pawn-black-1"
+						onclick="checkAllowedMovement(this.parentNode.id, this.id)"
+					></i>
+				</button>
+				<div id="50" class="chess">
+					<i
+						class="fa-solid fa-chess-pawn"
+						id="pawn-black-2"
+						onclick="checkAllowedMovement(this.parentNode.id, this.id)"
+					></i>
+				</div>
+				<div id="51" class="chess">
+					<i
+						class="fa-solid fa-chess-pawn"
+						id="pawn-black-3"
+						onclick="checkAllowedMovement(this.parentNode.id, this.id)"
+					></i>
+				</div>
+				<div id="52" class="chess">
+					<i
+						class="fa-solid fa-chess-pawn"
+						id="pawn-black-4"
+						onclick="checkAllowedMovement(this.parentNode.id, this.id)"
+					></i>
+				</div>
+				<div id="53" class="chess">
+					<i
+						class="fa-solid fa-chess-pawn"
+						id="pawn-black-5"
+						onclick="checkAllowedMovement(this.parentNode.id, this.id)"
+					></i>
+				</div>
+				<div id="54" class="chess">
+					<i
+						class="fa-solid fa-chess-pawn"
+						id="pawn-black-6"
+						onclick="checkAllowedMovement(this.parentNode.id, this.id)"
+					></i>
+				</div>
+				<div id="55" class="chess">
+					<i
+						class="fa-solid fa-chess-pawn"
+						id="pawn-black-7"
+						onclick="checkAllowedMovement(this.parentNode.id, this.id)"
+					></i>
+				</div>
+				<div id="56" class="chess">
+					<i
+						class="fa-solid fa-chess-pawn"
+						id="pawn-black-8"
+						onclick="checkAllowedMovement(this.parentNode.id, this.id)"
+					></i>
+				</div>
+				<div id="57" class="chess">
+					<i
+						class="fa-solid fa-chess-rook"
+						id="rook-black-1"
+						onclick="checkAllowedMovement(this.parentNode.id, this.id)"
+					></i>
+				</div>
+				<div id="58" class="chess">
+					<i
+						class="fa-sharp fa-solid fa-chess-knight"
+						id="knight-black-1"
+						onclick="checkAllowedMovement(this.parentNode.id, this.id)"
+					></i>
+				</div>
+				<div id="59" class="chess">
+					<i
+						class="fa-solid fa-chess-bishop"
+						id="bishop-black-1"
+						onclick="checkAllowedMovement(this.parentNode.id, this.id)"
+					></i>
+				</div>
+				<div id="60" class="chess">
+					<i
+						class="fa-sharp fa-solid fa-chess-queen"
+						id="queen-black"
+						onclick="checkAllowedMovement(this.parentNode.id, this.id)"
+					></i>
+				</div>
+				<div id="61" class="chess">
+					<i
+						class="fa-sharp fa-solid fa-chess-king"
+						id="king-black"
+						onclick="checkAllowedMovement(this.parentNode.id, this.id)"
+					></i>
+				</div>
+				<div id="62" class="chess">
+					<i
+						class="fa-solid fa-chess-bishop"
+						id="bishop-black-2"
+						onclick="checkAllowedMovement(this.parentNode.id, this.id)"
+					></i>
+				</div>
+				<div id="63" class="chess">
+					<i
+						class="fa-sharp fa-solid fa-chess-knight"
+						id="knight-black-2"
+						onclick="checkAllowedMovement(this.parentNode.id, this.id)"
+					></i>
+				</div>
+				<div id="64" class="chess">
+					<i
+						class="fa-solid fa-chess-rook"
+						id="rook-black-2"
+						onclick="checkAllowedMovement(this.parentNode.id, this.id)"
+					></i>
+				</div>
+			</div>
+		</section>
+		<script src="index.js" async defer></script>
+	</body>
+</html>

@@ -1,0 +1,43 @@
+* {
+	top: 0;
+	left: 0;
+	box-sizing: border-box;
+	margin: 0;
+}
+
+section {
+	position: relative;
+}
+
+.grid-container {
+	display: grid;
+}
+
+.board {
+	grid-template-columns: repeat(8, 1fr);
+	grid-template-rows: repeat(8, 1fr);
+	margin-left: 30vw;
+	margin-right: 30vw;
+	width: 40vw;
+	height: 40vw;
+	margin-top: 3vw;
+	position: absolute;
+}
+
+.light {
+	background-color: #f1dbbf;
+}
+
+.dark {
+	background-color: #b99b6b;
+}
+i {
+	font-size: 4em;
+	width: -webkit-fill-available;
+	height: -webkit-fill-available;
+	cursor: pointer;
+}
+
+.active {
+	background-color: blue;
+}
